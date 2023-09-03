@@ -11,6 +11,8 @@ I made sure used proper indentation and comments in your CSS code to improve rea
 I also used media queries to make sure the webpage is responsive and displays well on different screen sizes (e.g.,
 desktop, tablet, mobile).
 
+Note: The person in this picture is not me. I took the picture from unsplash
+
 # Links
 google font link: https://fonts.google.com/?query=barlow
 image link: https://unsplash.com/s/photos/woman-with-laptop
