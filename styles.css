@@ -1,0 +1,109 @@
+
+:root {
+    --text: #f07f83;
+    --background: #3b0f0f;
+    --primary: #1d4089;
+    --secondary: #27273a;
+    --accent: #a72157;
+    --body: #5f2118
+}
+
+
+/* removing default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+img,
+main {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 3rem;
+    background-color: var(--accent);
+    color: var(--text);
+    height: 100vh;
+    border: 2px dotted rgb(12, 32, 48);
+    font-family: 'Fraunces', serif;
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* styling the main section */
+main {
+    background-color: var(--background);
+    margin-top: -1rem;
+}
+main h2 {
+    text-transform: capitalize;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+/* the header section */
+.intro {
+    margin-top: -2rem;
+}
+.intro h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--secondary);
+    /* box-shadow: 0 4px 8px rgba(123, 180, 201, .8); */
+    padding: 1rem;
+    font-family: 'Courgette', cursive;
+    margin-top: 2rem;
+    letter-spacing: .5rem;
+}
+
+    .border {
+    background-color: var(--secondary);
+    padding: .1rem;
+}
+
+
+/* content styling */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2rem;
+}
+
+
+/* media query section */
+@media screen and (max-width:700px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+}
+
+.container .card1 {
+    width: 50%;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5rem;
+    padding: 1rem;
+}
+.container .card2 {
+    width: 50%;
+    text-align: justify;
+    font-size: .8rem;
+    line-height: 1.5rem;
+} 
+main img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
