@@ -1,11 +1,11 @@
-
+/* my variables */
 :root {
     --text: #f07f83;
     --background: #3b0f0f;
     --primary: #1d4089;
     --secondary: #27273a;
     --accent: #a72157;
-    --body: #5f2118
+    --body: #5f2118;
 }
 
 
@@ -59,7 +59,7 @@ main h2 {
     letter-spacing: .5rem;
 }
 
-    .border {
+.border {
     background-color: var(--secondary);
     padding: .1rem;
 }
@@ -68,12 +68,70 @@ main h2 {
 /* content styling */
 .container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 2rem;
+}
+
+.container .card1 h4 {
+    line-height: 1.9;
+}
+
+.container .card2 p {
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* button styling */
+button {
+    border: none;
+    padding: .7rem;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 2s ease-in-out, padding 1s ease-in-out, font-size 1s ease-in-out;
+}
+
+/* transition for button */
+button:hover {
+    background-color: #3b3b5c;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+
+/* animation for button */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-15px);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    75% {
+        transform: translateX(-15px);
+    }
+
+    100% {
+        transform: translateX(15px);
+    }
+}
+
+button h3:hover {
+    animation: shake 1.5s infinite;
 }
 
 
@@ -85,6 +143,7 @@ main h2 {
         align-items: center;
         gap: 0rem;
         margin: 0;
+        padding: 0;
         font-size: 1.6rem;
     }
 }
