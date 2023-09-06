@@ -28,8 +28,7 @@ I also found out a website to generate colors for websites. You should check it 
 
 # Continued Development
 
-In case you come across this code, and you notice there is something I could have done better, kindly make your suggestions. The repo is public!!
-
-Thank you
+In case you come across this code, and you notice there is something I could have done better, kindly make your suggestions. The repo is public
+Thank you!!!
 
 My name is Rebecca and I built this webpage.
