@@ -21,7 +21,7 @@ main {
     padding: 0;
 }
 
-
+/* styling of the body */
 body {
     margin: 3rem;
     background-color: var(--accent);
@@ -52,7 +52,6 @@ main h2 {
     text-align: center;
     text-transform: uppercase;
     background-color: var(--secondary);
-    /* box-shadow: 0 4px 8px rgba(123, 180, 201, .8); */
     padding: 1rem;
     font-family: 'Courgette', cursive;
     margin-top: 2rem;
@@ -76,6 +75,70 @@ main h2 {
     padding: 2rem;
 }
 
+.container .card1 {
+    width: 50%;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5rem;
+    padding: 1rem;
+}
+.container .card2 {
+    width: 50%;
+    text-align: justify;
+    font-size: .8rem;
+    line-height: 1.5rem;
+} 
+
+/* button styling */
+button {
+    border: none;
+    padding: .7rem;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 2s ease-in-out, padding 1s ease-in-out, font-size 1s ease-in-out;
+}
+
+/* transition for button */
+button:hover {
+    background-color: #3b3b5c;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+
+/* animation for button */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-15px);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    75% {
+        transform: translateX(-15px);
+    }
+
+    100% {
+        transform: translateX(15px);
+    }
+}
+
+button h3:hover {
+    animation: shake 1.5s infinite;
+}
+
 
 /* media query section */
 @media screen and (max-width:700px) {
@@ -85,9 +148,11 @@ main h2 {
         align-items: center;
         gap: 0rem;
         margin: 0;
+        padding: 0;
         font-size: 1.6rem;
     }
 }
+
 
 .container .card1 {
     width: 50%;
