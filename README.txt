@@ -32,4 +32,4 @@ In case you come across this code, and you notice there is something I could hav
 
 Thank you
 
-My name is Rebecca and I built this webpage.
+My name is Rebecca and I built this webpage
